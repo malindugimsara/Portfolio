@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
+import { ArrowDownCircle, ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
@@ -57,8 +57,13 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm Malindu`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer"]'><span className="wrap">{text}</span></span></h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
+                  <p>I am a Full Stack Developer focused on building modern, scalable web applications with clean user interfaces and reliable backend systems.</p>
+                  <button onClick={() => {
+                      const section = document.querySelector('#projects');
+                      section?.scrollIntoView({ behavior: 'smooth' });
+                  }}>
+                      Scroll Down <ArrowDownCircle size={25} />
+                  </button>
               </div>}
             </TrackVisibility>
           </Col>

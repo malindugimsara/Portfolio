@@ -17,18 +17,22 @@ export const Projects = () => {
       title: "Print Shop Management System",
       description: "MERN Stack | Admin Analytics Dashboard",
       imgUrl: projImg2,
-      githubUrl: "https://github.com/yourusername/postal-system",
-    demoUrl: "https://postal-system.vercel.app"
+      githubUrl: "https://github.com/malindugimsara/print-shop-test",
+      demoUrl: "https://print-shop-v2.vercel.app/"
     },
     {
       title: "Smart Postal Delivery System",
       description: "MERN Stack | Role-based Access & Tracking",
       imgUrl: projImg1,
+      githubUrl: "https://github.com/malindugimsara/smart-postal-managment-system",
+      demoUrl: "https://smart-postal-managment-system.vercel.app/"
     },
     {
       title: "Lost & Found Web App",
       description: "MERN & Supabase | Real-time Updates",
       imgUrl: projImg3,
+      githubUrl: "https://github.com/dilshansethmina2002/Lost-and-find-item",
+     
     },
   ];
 
@@ -37,6 +41,7 @@ export const Projects = () => {
       title: "IoT Product Quality System",
       description: "C#, Arduino & Robotics | Automation",
       imgUrl: projImg4,
+      demoUrl: "https://www.linkedin.com/posts/malindu-gimsara-181441321_iot-innovation-technology-activity-7295458614914301952-FXF-?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFFmi7EBd4mVDdrzf08dFE2HSOlPEdS3pXQ"
     },
   ];
 
@@ -46,6 +51,8 @@ export const Projects = () => {
       title: "GlamWed Studio",
       description: "PHP & WAMP | Wedding Management",
       imgUrl: projImg5,
+      githubUrl: "https://github.com/dilshansethmina2002/Web-Group-Project",
+      
     },
   ];
 
