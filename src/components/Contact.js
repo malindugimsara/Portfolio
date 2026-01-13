@@ -24,24 +24,26 @@ export const Contact = () => {
   }
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
-    setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json;charset=utf-8",
-      },
-      body: JSON.stringify(formDetails),
-    });
-    setButtonText("Send");
-    let result = await response.json();
+  e.preventDefault();
+  setButtonText("Sending...");
+  
+  // Replace the localhost URL with your Formspree URL
+  let response = await fetch("https://formspree.io/f/xdaaopaa", {
+    method: "POST",
+    headers: {
+      "Accept": "application/json",
+    },
+    body: JSON.stringify(formDetails),
+  });
+
+  setButtonText("Send");
+  if (response.ok) {
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
-      setStatus({ succes: true, message: 'Message sent successfully'});
-    } else {
-      setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
-    }
-  };
+    setStatus({ success: true, message: 'Message sent successfully'});
+  } else {
+    setStatus({ success: false, message: 'Something went wrong.'});
+  }
+};
 
   return (
     <section className="contact" id="connect">
