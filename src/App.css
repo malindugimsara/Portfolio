@@ -466,10 +466,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/* *********** Projects Css ***********
 .contact {
-  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-  padding: 60px 0 200px 0;
+  background: linear-gradient(90.21deg, #fec5e7 -5.91%, #1c077b 111.58%);
+  border-radius: 64px;
+  text-align: center;
+  padding: 60px 50px;
 }
 .contact img {
   width: 92%;
@@ -536,6 +538,93 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover::before {
   width: 100%;
+} */
+
+/************ Contact Css ************/
+.contact {
+  padding: 60px 0 100px 0;
+  position: relative;
+  background-color: #121212; /* Matches page background */
+  
+}
+
+/* Form Container Card - Matches Skills and Education style */
+.contact .container {
+  background: linear-gradient(90.21deg, #540133 -5.91%, #120354 111.58%);
+  border-radius: 64px;
+  padding: 60px 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact img {
+  width: 92%;
+  /* Optional: Add the same float animation from your banner */
+  animation: updown 3s linear infinite;
+}
+
+.contact h2 {
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #fff;
+  text-align: left;
+}
+
+.contact form {
+  text-align: left;
+}
+
+.contact form input, 
+.contact form textarea {
+  width: 100%;
+  background: rgba(214, 208, 208, 0.05); /* Darker, transparent input */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  color: #ffffff;
+  margin: 0 0 12px 0;
+  padding: 18px 26px;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  transition: 0.3s ease-in-out;
+}
+
+.contact form input:focus, 
+.contact form textarea:focus {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #AA367C; /* Highlights with your theme's purple */
+  outline: none;
+}
+
+/* Matching the Button to your Theme */
+.contact form button {
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  padding: 14px 48px;
+  font-size: 18px;
+  margin-top: 15px;
+  border-radius: 10px; /* Matching your project links */
+  position: relative;
+  transition: 0.3s ease-in-out;
+  border: none;
+}
+
+.contact form button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(170, 54, 124, 0.6);
+}
+
+.contact .success {
+  color: #28a745;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.contact .danger {
+  color: #dc3545;
+  margin-top: 20px;
+  font-weight: 500;
 }
 
 /************ Footer Css ************/
@@ -1220,5 +1309,69 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
   .edu-list li {
     font-size: 13px;
+  }
+}
+/* Tablets & below */
+@media (max-width: 991px) {
+  .contact .container {
+    padding: 40px 30px;
+    border-radius: 40px;
+  }
+
+  .contact h2 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .contact img {
+    width: 100%;
+    margin-bottom: 30px;
+    animation: none; /* Mobile performance improve */
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 576px) {
+  .contact {
+    padding: 40px 10px 60px 10px;
+  }
+
+  .contact .container {
+    padding: 30px 20px;
+    border-radius: 30px;
+  }
+
+  .contact h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .contact form input,
+  .contact form textarea {
+    font-size: 16px;
+    padding: 14px 18px;
+    border-radius: 14px;
+  }
+
+  .contact form button {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 16px;
+    border-radius: 12px;
+  }
+
+  
+
+  .contact img {
+  width: 60%;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+  .contact .success,
+  .contact .danger {
+    text-align: center;
+    font-size: 14px;
   }
 }
