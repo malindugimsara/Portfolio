@@ -233,12 +233,45 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Banner Css ************/
 .banner {
   margin-top: 0;
-  padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  padding: 230px 0 100px 0;
+  background-image: url('./assets/img/banner-bg..jpg');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.header-img {
+  width: 100%;
+  max-width: 600px;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.banner-buttons button {
+  margin-right: 15px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.banner-buttons button:hover {
+  background: #6a11cb;
+  border-color: #6a11cb;
+}
+
 .banner .tagline {
   font-weight: 700;
   letter-spacing: 0.8px;
@@ -344,7 +377,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
 }
 .project h2 {
 	font-size: 45px;
@@ -465,13 +497,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
-
-/* *********** Projects Css ***********
 .contact {
-  background: linear-gradient(90.21deg, #fec5e7 -5.91%, #1c077b 111.58%);
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
+  
 }
 .contact img {
   width: 92%;
@@ -540,12 +570,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 } */
 
-/************ Contact Css ************/
+
 .contact {
   padding: 60px 0 100px 0;
   position: relative;
-  background-color: #121212; /* Matches page background */
-  
 }
 
 /* Form Container Card - Matches Skills and Education style */
@@ -711,8 +739,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ Education Css ************/
 .education {
-  padding: 0 0 50px 0;
-  position: relative;
+    padding: 80px 0;
+    position: relative;
 }
 
 .education-timeline {
@@ -889,7 +917,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: #121212;
+  
 }
 
 .category-title {
@@ -1112,9 +1140,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
 
   .banner button {
-    width: auto;              /* full width nathi wenna */
-    padding: 8px 16px;        /* button size podi */
-    font-size: 14px;          /* text size podi */
+    width: auto;             
+    padding: 8px 16px;       
+    font-size: 14px;          
     border-radius: 6px;
     display: flex;
     align-items: center;
@@ -1373,5 +1401,30 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .contact .danger {
     text-align: center;
     font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .header-img {
+    margin-top: 40px;
+    max-width: 280px;
+    margin: 40px auto 0;
+  }
+
+  .banner h1 {
+    font-size: 32px;
+  }
+}
+/* Tablet */
+@media (max-width: 992px) {
+  .header-img {
+    max-width: 360px;
+    margin: 0 auto;   /* center image */
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .header-img {
+    max-width: 220px;
   }
 }

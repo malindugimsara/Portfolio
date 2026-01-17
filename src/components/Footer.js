@@ -19,7 +19,7 @@ export const Footer = () => {
                 <a href="https://wa.me/94768580518" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="" /></a>
                 <a href="https://github.com/malindugimsara" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="" /></a>
             </div>
-            <p>Copyright 2025. All Rights Reserved</p>
+            <p> Malindu Gimsara  <br /> Copyright 2026. All Rights Reserved</p>
           </Col>
         </Row>
       </Container>
