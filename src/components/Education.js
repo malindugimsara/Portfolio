@@ -54,7 +54,7 @@ export const Education = () => {
           </Col>
         </Row>
       </Container>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <img className="background-image-left" src={colorSharp} alt="Decorative background pattern"/>
     </section>
   )
 }
