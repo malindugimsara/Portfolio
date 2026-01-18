@@ -241,7 +241,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .header-img {
-  width: 100%;
+  width: 120%;
   max-width: 600px;
   animation: float 6s ease-in-out infinite;
 }
@@ -317,6 +317,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .banner img {
   animation: updown 3s linear infinite;
+  margin-top: -100px;
 }
 @keyframes updown {
     0% {
@@ -1419,6 +1420,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .header-img {
     max-width: 360px;
     margin: 0 auto;   /* center image */
+  }
+  .banner img{
+    margin-top: 0px;
   }
 }
 

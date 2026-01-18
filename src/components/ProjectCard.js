@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Col } from "react-bootstrap";
 
 export const ProjectCard = ({ title, description, imgUrl, githubUrl, demoUrl }) => {
-  const [showDetails, setShowDetails] = useState(false);
+  const [showDetails] = useState(false);
 
   return (
     <Col sm={6} md={4} className="d-flex">
