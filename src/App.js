@@ -7,6 +7,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 import { Education } from './components/Education';
 import { Leadership } from './components/LeaderShip';
+import { Analytics } from '@vercel/analytics/react';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Leadership />
       <Contact />
       <Footer />
+      <Analytics />
     </div>
   );
 }
